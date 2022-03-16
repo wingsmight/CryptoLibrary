@@ -1,7 +1,6 @@
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\bin\Debug\CryptoLibrary.exe.config
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\bin\Debug\CryptoLibrary.exe
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\bin\Debug\CryptoLibrary.pdb
-C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.csprojAssemblyReference.cache
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.Asymmetr.resources
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.DigSig.resources
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.Form1.resources
@@ -11,3 +10,5 @@ C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\Cry
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.csproj.GenerateResource.cache
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.exe
 C:\Users\i.kondratev.2018\source\repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.pdb
+C:\Users\i.kondratev.2018\Source\Repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.csproj.AssemblyReference.cache
+C:\Users\i.kondratev.2018\Source\Repos\CryptoLibrary\CryptoLibrary\obj\Debug\CryptoLibrary.csproj.CoreCompileInputs.cache

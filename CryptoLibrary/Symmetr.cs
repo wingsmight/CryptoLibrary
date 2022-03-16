@@ -67,9 +67,10 @@ namespace CryptoLibrary
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             label3.Text = "Выбранный файл - " + openFileDialog1.FileName;
+            
             inputBuffer = File.ReadAllBytes(openFileDialog1.FileName);
 
-            textBox1.Text = "Зашифровать сообщение: " + Encoding.UTF8.GetString(inputBuffer) + Environment.NewLine;
+            textBox1.Text = "Зашифровать сообщение: " + Encoding.Default.GetString(inputBuffer) + Environment.NewLine;
 
         }
 
@@ -101,7 +102,7 @@ namespace CryptoLibrary
                 writer.Write(encodeMsg);
             }
 
-            textBox1.Text += "Шифротекст (AES): " + Encoding.UTF8.GetString(encodeMsg) + Environment.NewLine;
+            textBox1.Text += "Шифротекст (AES): " + Encoding.Default.GetString(encodeMsg) + Environment.NewLine;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -114,7 +115,7 @@ namespace CryptoLibrary
             }
 
 
-            textBox1.Text += "Дешифровано (AES): " + Encoding.UTF8.GetString(outputBuffer) + Environment.NewLine;
+            textBox1.Text += "Дешифровано (AES): " + Encoding.Default.GetString(outputBuffer) + Environment.NewLine;
 
             button5.Enabled = true;
             button6.Enabled = true;
@@ -130,8 +131,8 @@ namespace CryptoLibrary
             aes.GenerateIV();
             IV = aes.IV;
 
-            textBox1.Text += "Key: " + Encoding.UTF8.GetString(key) + Environment.NewLine;
-            textBox1.Text += "IV: " + Encoding.UTF8.GetString(IV) + Environment.NewLine;
+            textBox1.Text += "Key: " + Encoding.Default.GetString(key) + Environment.NewLine;
+            textBox1.Text += "IV: " + Encoding.Default.GetString(IV) + Environment.NewLine;
 
         }
 
@@ -143,8 +144,8 @@ namespace CryptoLibrary
             tripdes.GenerateIV();
             IV = tripdes.IV;
 
-            textBox1.Text += "Key: " + Encoding.UTF8.GetString(key) + Environment.NewLine;
-            textBox1.Text += "IV: " + Encoding.UTF8.GetString(IV) + Environment.NewLine;
+            textBox1.Text += "Key: " + Encoding.Default.GetString(key) + Environment.NewLine;
+            textBox1.Text += "IV: " + Encoding.Default.GetString(IV) + Environment.NewLine;
 
         }
 
@@ -160,7 +161,7 @@ namespace CryptoLibrary
                 writer.Write(encodeMsg);
             }
 
-            textBox1.Text += "Шифротекст (3DES): " + Encoding.UTF8.GetString(encodeMsg) + Environment.NewLine;
+            textBox1.Text += "Шифротекст (3DES): " + Encoding.Default.GetString(encodeMsg) + Environment.NewLine;
         }
 
         private void button6_Click_1(object sender, EventArgs e)
@@ -173,7 +174,7 @@ namespace CryptoLibrary
             }
 
 
-            textBox1.Text += "Дешифровано (3DES): " + Encoding.UTF8.GetString(outputBuffer) + Environment.NewLine;
+            textBox1.Text += "Дешифровано (3DES): " + Encoding.Default.GetString(outputBuffer) + Environment.NewLine;
 
             button3.Enabled = true;
             button4.Enabled = true;

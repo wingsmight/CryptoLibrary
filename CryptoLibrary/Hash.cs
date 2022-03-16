@@ -44,7 +44,7 @@ namespace CryptoLibrary
             label2.Text = "Выбранный файл - " + openFileDialog1.FileName;
             inputBuffer = File.ReadAllBytes(openFileDialog1.FileName);
 
-            textBox1.Text = "Взять хэш от сообщения: " + Encoding.UTF8.GetString(inputBuffer) + Environment.NewLine;
+            textBox1.Text = "Взять хэш от сообщения: " + Encoding.Default.GetString(inputBuffer) + Environment.NewLine;
         }
 
         private void button7_Click(object sender, EventArgs e)

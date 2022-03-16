@@ -146,7 +146,7 @@ namespace CryptoLibrary
             label3.Text = "Выбранный файл - " + openFileDialog1.FileName;
             inputBuffer = File.ReadAllBytes(openFileDialog1.FileName);
 
-            textBox1.Text = "Подписать сообщение: " + Encoding.UTF8.GetString(inputBuffer) + Environment.NewLine;
+            textBox1.Text = "Подписать сообщение: " + Encoding.Default.GetString(inputBuffer) + Environment.NewLine;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -164,7 +164,7 @@ namespace CryptoLibrary
             if (checkBox1.Checked)
                 textBox1.Text += "C ключом " + rsaparam + Environment.NewLine;
 
-            textBox1.Text += Environment.NewLine + "Подпись: " + Encoding.UTF8.GetString(signMsg) + Environment.NewLine;
+            textBox1.Text += Environment.NewLine + "Подпись: " + Encoding.Default.GetString(signMsg) + Environment.NewLine;
 
         }
 
@@ -198,7 +198,7 @@ namespace CryptoLibrary
                 if (checkBox1.Checked)
                     textBox1.Text += "C ключом " + dsaparam + Environment.NewLine;
 
-                textBox1.Text += Environment.NewLine + "Подпись: " + Encoding.UTF8.GetString(signMsg) + Environment.NewLine;
+                textBox1.Text += Environment.NewLine + "Подпись: " + Encoding.Default.GetString(signMsg) + Environment.NewLine;
             }
         }
 
@@ -219,12 +219,17 @@ namespace CryptoLibrary
             label4.Text = "Выбранный файл - " + openFileDialog2.FileName;
             signMsg = File.ReadAllBytes(openFileDialog2.FileName);
 
-            textBox1.Text = "Проверить сообщение: " + Encoding.UTF8.GetString(signMsg) + Environment.NewLine;
+            textBox1.Text = "Проверить сообщение: " + Encoding.Default.GetString(signMsg) + Environment.NewLine;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             openFileDialog2.ShowDialog();
+        }
+
+        private void button7_ClientSizeChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

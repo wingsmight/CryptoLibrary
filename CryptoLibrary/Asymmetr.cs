@@ -71,7 +71,7 @@ namespace CryptoLibrary
             label2.Text = "Выбранный файл - " + openFileDialog1.FileName;
             inputBuffer = File.ReadAllBytes(openFileDialog1.FileName);
 
-            textBox1.Text = "Зашифровать сообщение: " + Encoding.UTF8.GetString(inputBuffer) + Environment.NewLine;
+            textBox1.Text = "Зашифровать сообщение: " + Encoding.Default.GetString(inputBuffer) + Environment.NewLine;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace CryptoLibrary
                 writer.Write(encodeMsg);
             }
 
-            textBox1.Text += "Шифротекст: " + Encoding.UTF8.GetString(encodeMsg) + Environment.NewLine;
+            textBox1.Text += "Шифротекст: " + Encoding.Default.GetString(encodeMsg) + Environment.NewLine;
 
             button4.Enabled = true;
         }
@@ -109,7 +109,7 @@ namespace CryptoLibrary
             }
 
 
-            textBox1.Text += "Дешифровано: " + Encoding.UTF8.GetString(outputBuffer) + Environment.NewLine;
+            textBox1.Text += "Дешифровано: " + Encoding.Default.GetString(outputBuffer) + Environment.NewLine;
 
         }
     }
